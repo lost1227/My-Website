@@ -1,6 +1,6 @@
 @font-face {
   font-family: merriweather;
-  src: url(Merriweather-Regular.ttf);
+  src: url(font/Merriweather-Regular.ttf);
 }
 body {
   background: #f0f1f2 url("img/sayagata.png") repeat;
