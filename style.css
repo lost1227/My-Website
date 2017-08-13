@@ -1,0 +1,60 @@
+@font-face {
+  font-family: merriweather;
+  src: url(Merriweather-Regular.ttf);
+}
+body {
+  background: #f0f1f2 url("img/sayagata.png") repeat;
+  margin: 0px;
+}
+div.center {
+  min-height: 100%;
+  width: 70%;
+  margin: auto;
+  background-color: #FFFFFF;
+  padding: 5px;
+
+  box-shadow: 0 0 10px 0px black;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+hr {
+  margin: 20px 0px;
+}
+p {
+  font-family: merriweather, times, serif;
+  font-size: 0.85em;
+  margin: 2px 15px;
+}
+p.title {
+  font-size: 2em;
+  text-align: center;
+  display: block;
+}
+
+p.subheading {
+  font-size: 1.3em;
+  margin: 5px 15px;
+}
+
+p.paragraph {
+  text-indent: 10px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+a.inline {
+  text-decoration: none;
+}
+
+#mainphoto {
+  width: 200;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #b5b5b5;
+}
+#copyright {
+}
