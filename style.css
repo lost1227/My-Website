@@ -3,7 +3,7 @@
   src: url(font/Merriweather-Regular.ttf);
 }
 body {
-  background: #f0f1f2 url("img/sayagata.png") repeat;
+  background: #f0f1f2 url("img/circuit-board.svg") repeat;
   margin: 0px;
 }
 div.center {
@@ -54,7 +54,7 @@ a.inline {
   width: 200;
   display: block;
   margin: 20px auto;
-  border: 2px solid #b5b5b5;
+  box-shadow: 0 0 10px 0px black;
 }
 #copyright {
 }
