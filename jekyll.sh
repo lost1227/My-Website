@@ -13,6 +13,9 @@ if [ "$1" == "create" ]; then
         --mount type=bind,src=${PWD},dst=/srv/jekyll \
         jekyll/jekyll \
         sh -c "chown -R jekyll /usr/gem/ && jekyll new $2"
+elif [ ! -f Gemfile ]; then
+    echo "Error: could not find Gemfile"
+    exit 1
 elif [ "$1" == "build" ]; then
     docker run -it --rm \
         --mount type=bind,src=${PWD},dst=/srv/jekyll \
@@ -24,7 +27,12 @@ elif [ "$1" == "serve" ]; then
         --publish 4000:4000 \
         jekyll/jekyll \
         jekyll serve
+elif [ "$1" == "bundle" ]; then
+    docker run -it --rm \
+        --mount type=bind,src=${PWD},dst=/srv/jekyll \
+        jekyll/jekyll \
+        bundle ${@:2}
 else
-    echo "Usage: $0 [create|build|serve]"
+    echo "Usage: $0 [create|build|serve|bundle]"
     exit 1
 fi
