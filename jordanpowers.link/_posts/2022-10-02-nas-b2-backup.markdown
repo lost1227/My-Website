@@ -124,7 +124,7 @@ be recreated every time the system reboots.
             <3>*</3>
             <4>*</4>
             <5>*</5>
-            <run>/mnt/HD/HD_a2/Public/sync/b2-sync.sh &gt; /mnt/HD/HD_a2/Public/sync/b2-sync.log 2&gt;&amp;1</run>
+            <run>/mnt/HD/HD_a2/Public/sync/b2-sync.sh &gt;&gt; /mnt/HD/HD_a2/Public/sync/b2-sync.log 2&gt;&amp;1</run>
         </item>
     </b2_backup>
 </crond>
