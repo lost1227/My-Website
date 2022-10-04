@@ -1,0 +1,13 @@
+[Unit]
+Description=Dyndns client for AWS Route53
+After=netork-online.target
+Wants=netork-online.target
+
+[Service]
+Type=oneshot
+User=jordan
+ExecStart=/home/jordan/dyndns/dyndns.sh
+RemainAfterExit=yes 
+
+[Install]
+WantedBy=multi-user.target
