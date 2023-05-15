@@ -10,7 +10,7 @@ Recently, I've been going through my family's old MiniDV tapes and transcribing 
 I've been uploading the transcribed videos to our local NAS, which is where we have collected all
 the photos and videos taken from more modern cameras and camcorders. However, this recent
 transcription effort has forced me to consider the fragility of our current storage solution. While
-the RAID-0 configuration of the NAS provides some protection from drive failures, it's still not a
+the RAID-1 configuration of the NAS provides some protection from drive failures, it's still not a
 good idea to keep all these irreplaceable photos and videos in a single place. And so, I decided it
 was finally time to figure out an off-site backup for our NAS.
 
